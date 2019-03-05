@@ -3,6 +3,7 @@
 
 header {
 
+
 }
 
 header .logo, header nav {
@@ -66,6 +67,10 @@ body {
 header {
   border-bottom: 3px solid #d0a064;
   background-color: #167C80;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
 }
 
 .logo {
@@ -76,7 +81,12 @@ header {
 }
 
 nav ul li {
-  padding: 15px;
+  padding: 0 70px;
+  float:right-reverse;
+  display: inline-block;
+
+
+
 }
 
 .navigation a {
@@ -87,11 +97,17 @@ nav ul li {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 0.8em;
+  float: right;
+  list-style-type: none;
+  text-align: right;
+ 
 }
 
 .navigation li:hover a {
   color: #d0a064;
   transition: all 0.2s;
+
+ 
 }
 
 .hero-cont {
@@ -129,12 +145,20 @@ nav ul li {
   padding: 5px 15px;
   text-decoration:none;
   transition: all 0.2s;
+  width: 200px;
+  text-align: center;
+  /* align-items: center;
+   */
+
+
 }
 
 .aboutbtn:hover, .contactbtn:hover {
   background-color: #167C80;
   color: white;
   transition:all 0.2s;
+  align-items: center;
+
 }
 
 .container .top {
@@ -146,6 +170,7 @@ nav ul li {
   line-height: 1.4em;
   padding: 1em;
   font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .top p {
@@ -155,14 +180,25 @@ nav ul li {
 
 .aboutrow {
   background-color: #d0a064;
-  padding: 15px;
+  padding: 10px;
+display: flex;
+justify-content: space-around;
+width: 2350px;
+box-align: center;
+flex: 0%
 }
 
 .aboutcol {
   border: 1px solid #fff;
-  padding: 15px;
-  margin: 5px;
+  padding: 5px;
+  margin: 10px;
   background-color: #ffe5c5;
+ justify-content: center;
+ /* float: center; */
+ float: left;
+ width: 33.33%;
+ flex-wrap: wrap;
+ flex: 33.33%;
 }
 
 .aboutcol h4 {
@@ -176,6 +212,8 @@ nav ul li {
 
 .feature {
   background-color: #167C80;
+  overflow: auto;
+
 }
 
 .feat-left {
@@ -186,6 +224,9 @@ nav ul li {
 
 .feat-right {
   padding: 50px;
+  clear: right;
+  margin: 0 auto;
+ 
 }
 
 .feat-right p {
@@ -209,12 +250,14 @@ nav ul li {
 
 .cta {
   background-color: #d0a064;
+  flex-direction: row;
 }
 
 footer {
   background-color: #222;
   color: #ddd;
   padding: 50px;
+ flex-direction: row;
   text-align: center;
 }
 
@@ -225,6 +268,8 @@ footer {
 footer a {
   color: #d0a064;
   text-decoration: none;
+  float: left;
+
 
 }
 
@@ -263,6 +308,11 @@ footer h5 {
   footer {
     text-align: left;
     padding: 50px 15px 50px 200px;
+    flex-direction: row;
+    /* height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around; */
   }
 
 }
